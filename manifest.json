@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "自动登录",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "crx.jpg"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://10.50.2.202/*","https://10.50.2.89/*","https://10.50.1.9/*","https://10.50.6.41/*","https://192.168.31.50/*"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
